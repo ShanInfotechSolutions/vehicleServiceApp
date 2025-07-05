@@ -59,7 +59,7 @@
 					<archive>
 						<manifest>
 							<mainClass>
-								com.shanInfotech.vehicleServiceApp.MainApp</mainClass>
+								com.shanInfotech.vehicleServiceApp.App</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
