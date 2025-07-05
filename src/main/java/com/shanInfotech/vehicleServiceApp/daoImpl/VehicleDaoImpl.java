@@ -19,7 +19,7 @@ public class VehicleDaoImpl implements VehicleDao{
 	Scanner sc=new Scanner(System.in);
 	
 	@Override
-	public void addVehicle() throws SQLException {
+	public void addVehicle(Vehicle v) throws SQLException {
 		 System.out.print("Enter Vehicle ID: ");
 		    int vid = sc.nextInt();
 		    sc.nextLine(); 
@@ -40,10 +40,10 @@ public class VehicleDaoImpl implements VehicleDao{
 
 		    String insertVehicle = "INSERT INTO vehicles VALUES (?, ?, ?, ?)";
 		    ps = con.prepareStatement(insertVehicle);
-		    ps.setInt(1, v1.getVid());
-		    ps.setString(2, v1.getOwner());
-		    ps.setString(3, v1.getModel());
-		    ps.setString(4, v1.getRegisterNumber());
+		    ps.setInt(1, v.getVid());
+		    ps.setString(2, v.getOwner());
+		    ps.setString(3, v.getModel());
+		    ps.setString(4, v.getRegisterNumber());
 
 		    ps.executeUpdate();
 		    con.commit();
