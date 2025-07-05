@@ -54,12 +54,12 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
-				<version>3.3.0</version> <!-- ✅ required -->
+				<version>3.3.0</version> 
 				<configuration>
 					<archive>
 						<manifest>
 							<mainClass>
-								com.shanInfotech.vehicleServiceApp.App</mainClass>
+								com.shanInfotech.vehicleServiceApp.VSMainApp</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
