@@ -10,6 +10,7 @@ public class VSMainApp {
 	    VehicleDao dao = new VehicleDaoImpl();
 	    dao.addVehicle();
 	    System.out.println("Inserted: " + v);
+	    dao.getVehicle();
 	}
 
 
