@@ -17,6 +17,4 @@ public class VSMainApp {
             System.out.println(v); // This uses the toString() of Vehicle class
         }
 	}
-
-
 }
