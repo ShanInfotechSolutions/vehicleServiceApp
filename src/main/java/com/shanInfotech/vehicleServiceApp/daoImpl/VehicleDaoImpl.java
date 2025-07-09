@@ -20,20 +20,6 @@ public class VehicleDaoImpl implements VehicleDao{
 	
 	@Override
 	public void addVehicle(Vehicle v) throws SQLException {
-		 System.out.print("Enter Vehicle ID: ");
-		    int vid = sc.nextInt();
-		    sc.nextLine(); 
-
-		    System.out.print("Enter Owner Name: ");
-		    String owner = sc.nextLine();
-
-		    System.out.print("Enter Vehicle Model: ");
-		    String model = sc.nextLine();
-
-		    System.out.print("Enter Registration Number: ");
-		    String regNo = sc.nextLine();
-
-		    Vehicle v1 = new Vehicle(vid, owner, model, regNo);
 
 		    con = DbConnect.connect();
 		    con.setAutoCommit(false);
